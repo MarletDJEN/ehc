@@ -8,7 +8,7 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    setBtnText('Merci — nous vous répondrons sous 24h.')
+    setBtnText('Merci — nous vous répondrons immédiatement.')
   }
 
   return (
@@ -18,21 +18,21 @@ export default function Contact() {
           <div className="container container--wide">
             <div className="hero-grid">
               <div className="hero-text">
-                <span className="eyebrow"><span className="dot" aria-hidden="true"></span>Réponse sous 24h ouvrées</span>
+                <span className="eyebrow"><span className="dot" aria-hidden="true"></span>Réponse immédiate</span>
                 <h1 className="hero-headline">
                   Envoyez un<br />
                   <span className="lime">message,</span> recevez<br />
                   une vraie réponse.
                 </h1>
                 <p className="hero-sub">
-                  Pas de chatbot, pas de formulaire sans réponse. Chaque message est lu et traité par un membre de notre équipe. Nous nous engageons à vous répondre sous 24 heures ouvrées.
+                  Pas de chatbot, pas de formulaire sans réponse. Chaque message est lu et traité par un membre de notre équipe. Nous nous engageons à vous répondre immédiatement.
                 </p>
                 <div className="hero-cta-row">
                   <a className="btn btn--primary btn--lg" href="#formulaire">Envoyer un message</a>
                   <a className="btn btn--ghost btn--lg" href="#canaux">Autres moyens de nous joindre</a>
                 </div>
                 <div className="hero-meta">
-                  <span><strong>24h</strong> · délai de réponse</span>
+                  <span><strong>Immédiat</strong> · réponse instantanée</span>
                   <span aria-hidden="true">·</span>
                   <span><strong>3</strong> · canaux de contact</span>
                   <span aria-hidden="true">·</span>
@@ -71,7 +71,7 @@ export default function Contact() {
                 <h3>Pour les apprenants.</h3>
                 <p>Inscription aux formations, information sur les programmes, orientation, calendrier des sessions. L'équipe pédagogique vous répond personnellement.</p>
                 <a className="channel-line" href="mailto:ehc.benin@gmail.com">ehc.benin @ gmail.com</a>
-                <span className="mono" style={{ color: 'var(--fg-mute)' }}>Équipe pédagogique · Réponse sous 24h</span>
+                <span className="mono" style={{ color: 'var(--fg-mute)' }}>Équipe pédagogique · Réponse immédiate</span>
               </article>
 
               <article className="channel-card" id="telephone">
@@ -88,7 +88,7 @@ export default function Contact() {
                 <h3>Pour les professionnels.</h3>
                 <p>Demande de devis formation entreprise, audit qualité, conseil, mise à disposition de personnel, location de matériel événementiel, vente d'équipement.</p>
                 <a className="channel-line" href="mailto:ehc.benin@gmail.com">ehc.benin @ gmail.com</a>
-                <span className="mono" style={{ color: 'var(--fg-mute)' }}>Service commercial · Devis sous 48h</span>
+                <span className="mono" style={{ color: 'var(--fg-mute)' }}>Service commercial · Devis immédiat</span>
               </article>
             </div>
           </div>
@@ -102,7 +102,7 @@ export default function Contact() {
                 <h2>Racontez-nous<br />votre projet.</h2>
               </div>
               <p className="lede">
-                Un paragraphe suffit. Nous lisons chaque message personnellement et vous répondons sous 24 heures ouvrées. Pas de formulaire sans réponse.
+                Un paragraphe suffit. Nous lisons chaque message personnellement et vous répondons immédiatement. Pas de formulaire sans réponse.
               </p>
             </div>
 
@@ -194,7 +194,7 @@ export default function Contact() {
                 <h2>Les questions<br />que l'on nous<br />pose le plus.</h2>
               </div>
               <p className="lede">
-                Ces questions reviennent sur presque chaque appel. Si la vôtre n'est pas dans la liste, écrivez-nous — la réponse est généralement sous 24h.
+                Ces questions reviennent sur presque chaque appel. Si la vôtre n'est pas dans la liste, écrivez-nous — la réponse est immédiate.
               </p>
             </div>
 
@@ -221,7 +221,7 @@ export default function Contact() {
               </div>
               <div className="faq-card">
                 <h3>Proposez-vous des formations pour les entreprises ?</h3>
-                <p>Oui, nous intervenons directement dans les établissements pour former le personnel sur site. Devis personnalisé sous 48h.</p>
+                <p>Oui, nous intervenons directement dans les établissements pour former le personnel sur site. Devis personnalisé immédiat.</p>
               </div>
             </div>
           </div>

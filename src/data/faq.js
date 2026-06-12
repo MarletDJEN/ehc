@@ -21,7 +21,7 @@ const faq = [
   },
   {
     q: "Proposez-vous des formations en entreprise ?",
-    a: "Oui, nous intervenons directement dans les établissements pour former le personnel sur place. Devis personnalisé sous 48h. Contactez-nous pour une proposition adaptée à vos besoins."
+    a: "Oui, nous intervenons directement dans les établissements pour former le personnel sur place. Devis personnalisé immédiat. Contactez-nous pour une proposition adaptée à vos besoins."
   },
   {
     q: "Quels services de conseil proposez-vous ?",
@@ -37,7 +37,7 @@ const faq = [
   },
   {
     q: "Comment vous contacter ?",
-    a: "Email : ehc.benin@gmail.com\nTéléphone : +229 01 40 14 64 91\nWhatsApp : +229 45 56 30 69\nAdresse : Cotonou, Bénin (centre-ville)\nRéponse sous 24h ouvrées."
+    a: "Email : ehc.benin@gmail.com\nTéléphone : +229 01 40 14 64 91\nWhatsApp : +229 45 56 30 69\nAdresse : Cotonou, Bénin (centre-ville)\nRéponse immédiate."
   },
 ]
 

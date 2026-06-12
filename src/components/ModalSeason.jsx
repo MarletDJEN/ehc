@@ -35,7 +35,7 @@ export default function ModalSeason() {
         <ul className="modal-check">
           <li>Mise à disposition de personnel qualifié</li>
           <li>Location de matériel événementiel</li>
-          <li>Devis sous 48h · Livraison incluse</li>
+          <li>Devis immédiat · Livraison incluse</li>
         </ul>
 
         <div className="modal-actions">

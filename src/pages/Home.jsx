@@ -67,8 +67,8 @@ export default function Home() {
               <div className="award-label">Places max par groupe</div>
             </div>
             <div className="award-cell">
-              <div className="award-num">24h</div>
-              <div className="award-label">Délai de réponse</div>
+              <div className="award-num">—</div>
+              <div className="award-label">Réponse immédiate</div>
             </div>
           </div>
         </div>

@@ -84,8 +84,8 @@ export default function APropos() {
               <div className="award-label">Accompagnement personnalisé</div>
             </div>
             <div className="award-cell">
-              <div className="award-num">24h</div>
-              <div className="award-label">Délai de réponse</div>
+              <div className="award-num">—</div>
+              <div className="award-label">Réponse immédiate</div>
             </div>
           </div>
         </div>
