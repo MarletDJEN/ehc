@@ -76,7 +76,7 @@ export default function ChatBot() {
         )}
       </button>
 
-      <div className={`chat-panel${open ? ' open' : ''}`} role="dialog" aria-label="Chat Élite Hospitality Consulting Bénin>
+      <div className={`chat-panel${open ? ' open' : ''}`} role="dialog" aria-label="Chat Élite Hospitality Consulting Bénin">
         <div className="chat-header">
           <div>
             <span className="chat-brand">EHC</span>
