@@ -254,19 +254,11 @@ p:last-child { margin-bottom: 0; }
   letter-spacing: -0.005em;
   text-transform: uppercase;
 }
-.brand-mark {
+.brand-logo {
   width: 28px; height: 28px;
-  background: var(--lime);
+  object-fit: contain;
   display: inline-block;
-  position: relative;
   border-radius: 4px;
-}
-.brand-mark::after {
-  content: '';
-  position: absolute;
-  inset: 6px;
-  background: var(--ink-000);
-  clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
 }
 .nav-links {
   display: flex;

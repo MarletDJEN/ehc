@@ -50,7 +50,7 @@ export default function Header() {
       <header className={`site-header${scrolled ? ' is-scrolled' : ''}${hidden ? ' is-hidden' : ''}`}>
         <div className="container container--wide">
           <nav className="nav" aria-label="Principal">
-            <Link className="brand" to="/"><span className="brand-mark" aria-hidden="true"></span> EHC</Link>
+            <Link className="brand" to="/"><img className="brand-logo" src="assets/img/logo.jpeg" alt="EHC" /> EHC</Link>
             <div className="nav-links" role="navigation">
               {links.map(l => (
                 <Link key={l.to} to={l.to} aria-current={location.pathname === l.to ? 'page' : undefined}>
