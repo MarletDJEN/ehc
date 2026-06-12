@@ -56,7 +56,7 @@ export default function Formations() {
               </p>
             </div>
 
-            <div className="center-row" style={{ flexWrap: 'wrap', gap: 'var(--space-3)', marginBottom: 'var(--space-7)' }}>
+            <div className="filter-row center-row">
               <button className="btn btn--primary btn--sm">Tous · 7</button>
               <button className="btn btn--ghost btn--sm">Service · 1</button>
               <button className="btn btn--ghost btn--sm">Bar · 2</button>
