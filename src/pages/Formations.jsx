@@ -16,7 +16,7 @@ export default function Formations() {
                   vous faire grandir.
                 </h1>
                 <p className="hero-sub">
-                  De l'initiation au perfectionnement, chaque programme EHC est conçu pour transformer des passionnés en professionnels accomplis. Théorie, pratique intensive et stage en entreprise pour une employabilité maximale.
+                  De l'initiation au perfectionnement, chaque programme Élite Hospitality Consulting Bénin est conçu pour transformer des passionnés en professionnels accomplis. Théorie, pratique intensive et stage en entreprise pour une employabilité maximale.
                 </p>
                 <div className="hero-cta-row">
                   <a className="btn btn--primary btn--lg" href="#programmes">Voir les programmes</a>
@@ -31,10 +31,10 @@ export default function Formations() {
                 </div>
               </div>
               <div className="hero-media">
-                <img src="assets/img/hero-archive.jpg" alt="Formation pratique en situation réelle — apprenants EHC en salle." />
+                <img src="assets/img/hero-archive.jpg" alt="Formation pratique en situation réelle — apprenants Élite Hospitality Consulting Bénin en salle." />
                 <div className="floating-tag ft-top">
                   <span className="pill">Formation</span>
-                  EHC · Cotonou
+                  Élite Hospitality Consulting Bénin · Cotonou
                 </div>
                 <div className="floating-tag ft-bottom">
                   Théorie + Pratique + Stage
@@ -191,7 +191,7 @@ export default function Formations() {
                 </p>
                 <blockquote className="pull-quote">
                   Ce qui fait un bon serveur ? La technique s'apprend. Le sens du service, lui, se transmet.
-                  <cite>— Formateur EHC</cite>
+                  <cite>— Formateur Élite Hospitality Consulting Bénin</cite>
                 </blockquote>
                 <p>
                   Le programme alterne cours théoriques (art de la table, œnologie, techniques de service), ateliers pratiques (dressage, service à l'assiette, découpage) et 4 semaines de stage immersif dans nos restaurants partenaires. À l'issue de la formation, l'apprenant reçoit une certification et un accompagnement personnalisé vers l'emploi.

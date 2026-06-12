@@ -16,7 +16,7 @@ export default function Services() {
                 vous former.
               </h1>
               <p className="hero-sub">
-                De la formation initiale au conseil stratégique, de la vente de matériel à la location événementielle — EHC couvre l'ensemble des besoins des professionnels de l'hôtellerie et de la restauration au Bénin.
+                De la formation initiale au conseil stratégique, de la vente de matériel à la location événementielle — Élite Hospitality Consulting Bénin couvre l'ensemble des besoins des professionnels de l'hôtellerie et de la restauration au Bénin.
               </p>
               <div className="hero-cta-row">
                 <a className="btn btn--primary btn--lg" href="#formation">Formation professionnelle</a>
@@ -31,10 +31,10 @@ export default function Services() {
               </div>
             </div>
             <div className="hero-media">
-              <img src="assets/img/services-hero.jpg" alt="Programme de formation EHC — supports pédagogiques et matériel professionnel." />
+              <img src="assets/img/services-hero.jpg" alt="Programme de formation Élite Hospitality Consulting Bénin — supports pédagogiques et matériel professionnel." />
               <div className="floating-tag ft-top">
                 <span className="pill">Pôle 01</span>
-                Formation · EHC
+                Formation · Élite Hospitality Consulting Bénin
               </div>
               <div className="floating-tag ft-bottom">
                 Théorique + pratique intensive
@@ -235,7 +235,7 @@ export default function Services() {
             <article className="cap-card cap-card--std">
               <span className="cap-num">Terrain</span>
               <h3>Accompagnement terrain.</h3>
-              <p>Un consultant EHC intervient directement dans vos services pour coacher vos équipes en situation réelle.</p>
+              <p>Un consultant Élite Hospitality Consulting Bénin intervient directement dans vos services pour coacher vos équipes en situation réelle.</p>
             </article>
 
             <article className="cap-card cap-card--std">
@@ -389,7 +389,7 @@ export default function Services() {
           </p>
           <div className="cta-row">
             <Link className="btn btn--dark btn--lg" to="/contact">
-              Rejoindre EHC
+              Rejoindre Élite Hospitality Consulting Bénin
               <svg className="arrow" width="16" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </Link>
             <Link className="btn btn--ghost btn--lg" to="/formations">Voir les formations</Link>

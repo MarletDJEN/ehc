@@ -32,7 +32,7 @@ const faq = [
     a: "Oui — tables, chaises, nappes, vaisselle complète, plats chauffants, bains-marie, matériel de buffet. Livraison et installation incluses. Demandez un devis par email ou téléphone."
   },
   {
-    q: "Puis-je recruter du personnel via EHC ?",
+    q: "Puis-je recruter du personnel via Élite Hospitality Consulting Bénin ?",
     a: "Oui — nous mettons à disposition des serveurs, chefs de rang, barmans, baristas, maîtres d'hôtel et superviseurs pour vos événements (mariages, séminaires, cocktails, réceptions). Tous formés à nos standards."
   },
   {

@@ -22,7 +22,7 @@ function matchAnswer(input, faqs) {
 export default function ChatBot() {
   const [open, setOpen] = useState(false)
   const [msgs, setMsgs] = useState([
-    { from: 'bot', text: '👋 Bonjour ! Je suis le chatbot EHC. Posez-moi une question ou choisissez un sujet ci-dessous.' }
+    { from: 'bot', text: '👋 Bonjour ! Je suis le chatbot Élite Hospitality Consulting Bénin. Posez-moi une question ou choisissez un sujet ci-dessous.' }
   ])
   const [input, setInput] = useState('')
   const [showQuick, setShowQuick] = useState(true)
@@ -76,7 +76,7 @@ export default function ChatBot() {
         )}
       </button>
 
-      <div className={`chat-panel${open ? ' open' : ''}`} role="dialog" aria-label="Chat EHC">
+      <div className={`chat-panel${open ? ' open' : ''}`} role="dialog" aria-label="Chat Élite Hospitality Consulting Bénin>
         <div className="chat-header">
           <div>
             <span className="chat-brand">EHC</span>

@@ -29,7 +29,7 @@ export default function ModalSeason() {
         <h2 className="modal-title">Besoin de personnel<br/>pour vos fêtes ?</h2>
 
         <p className="modal-desc">
-          Mariages, réveillons, séminaires de fin d'année — EHC met à votre disposition des serveurs, barmans, maîtres d'hôtel et superviseurs formés à nos standards d'excellence. Nous louons également tout le matériel événementiel nécessaire (tables, chaises, vaisselle, décoration).
+          Mariages, réveillons, séminaires de fin d'année — Élite Hospitality Consulting Bénin met à votre disposition des serveurs, barmans, maîtres d'hôtel et superviseurs formés à nos standards d'excellence. Nous louons également tout le matériel événementiel nécessaire (tables, chaises, vaisselle, décoration).
         </p>
 
         <ul className="modal-check">

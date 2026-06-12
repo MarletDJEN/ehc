@@ -38,9 +38,9 @@ export default function Home() {
               </div>
             </div>
             <div className="hero-media">
-              <img src="assets/img/studio-hero.jpg" alt="Centre de formation EHC à Cotonou — salle de cours équipée." />
+              <img src="assets/img/studio-hero.jpg" alt="Centre de formation Élite Hospitality Consulting Bénin à Cotonou — salle de cours équipée." />
               <div className="floating-tag ft-top">
-                <span className="pill">EHC</span>
+                <span className="pill">Élite Hospitality Consulting Bénin</span>
                 Cotonou · Bénin
               </div>
               <div className="floating-tag ft-bottom">
@@ -82,7 +82,7 @@ export default function Home() {
               <h2>Des services pensés<br/>pour les<br/>professionnels.</h2>
             </div>
             <p className="lede">
-              De la formation initiale au conseil stratégique, de la vente de matériel à la location événementielle — EHC couvre l'ensemble des besoins des métiers de l'hôtellerie et de la restauration au Bénin.
+              De la formation initiale au conseil stratégique, de la vente de matériel à la location événementielle — Élite Hospitality Consulting Bénin couvre l'ensemble des besoins des métiers de l'hôtellerie et de la restauration au Bénin.
             </p>
           </div>
 
@@ -118,11 +118,11 @@ export default function Home() {
             </div>
             <div className="chapter-body">
               <p>
-                EHC est né d'un constat simple : le Bénin regorge de talents passionnés par les métiers de l'hôtellerie et de la restauration, mais les formations disponibles ne préparent pas assez aux réalités du terrain. C'est pourquoi nous avons créé un centre qui allie exigence pédagogique et immersion professionnelle.
+                Élite Hospitality Consulting Bénin est né d'un constat simple : le Bénin regorge de talents passionnés par les métiers de l'hôtellerie et de la restauration, mais les formations disponibles ne préparent pas assez aux réalités du terrain. C'est pourquoi nous avons créé un centre qui allie exigence pédagogique et immersion professionnelle.
               </p>
               <blockquote className="pull-quote">
                 Nous voulons créer l'école que nous aurions aimé avoir.
-                <cite>— Fondateur EHC</cite>
+                <cite>— Fondateur Élite Hospitality Consulting Bénin</cite>
               </blockquote>
               <p>
                 Notre approche — 80% de pratique, des formateurs issus du terrain, un suivi personnalisé — est pensée pour maximiser l'employabilité de chaque apprenant. Nous construisons patiemment notre réseau de partenaires pour offrir les meilleures opportunités de stage et d'insertion professionnelle.
@@ -207,7 +207,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="split-img">
-              <img src="assets/img/studio-brooklyn.jpg" alt="Salle de restaurant pédagogique du centre EHC." />
+              <img src="assets/img/studio-brooklyn.jpg" alt="Salle de restaurant pédagogique du centre Élite Hospitality Consulting Bénin." />
               <span className="ft-corner">Cotonou · Bénin</span>
             </div>
           </div>

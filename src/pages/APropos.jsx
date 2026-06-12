@@ -32,7 +32,7 @@ export default function APropos() {
               </div>
             </div>
             <div className="hero-media">
-              <img src="assets/img/studio-hero.jpg" alt="Centre de formation EHC à Cotonou — salle de cours équipée." />
+              <img src="assets/img/studio-hero.jpg" alt="Centre de formation Élite Hospitality Consulting Bénin à Cotonou — salle de cours équipée." />
               <div className="floating-tag ft-top">
                 <span className="pill">Centre</span>
                 COTONOU · BÉNIN
@@ -54,11 +54,11 @@ export default function APropos() {
             </div>
             <div className="chapter-body">
               <p>
-                EHC est né d'un constat simple : le Bénin regorge de talents passionnés par les métiers de l'hôtellerie et de la restauration, mais les formations disponibles ne préparent pas assez aux réalités du terrain. C'est pourquoi nous avons créé un centre qui allie exigence pédagogique et immersion professionnelle, avec une approche résolument tournée vers la pratique.
+                Élite Hospitality Consulting Bénin est né d'un constat simple : le Bénin regorge de talents passionnés par les métiers de l'hôtellerie et de la restauration, mais les formations disponibles ne préparent pas assez aux réalités du terrain. C'est pourquoi nous avons créé un centre qui allie exigence pédagogique et immersion professionnelle, avec une approche résolument tournée vers la pratique.
               </p>
               <blockquote className="pull-quote">
                 Nous voulons créer l'école que nous aurions aimé avoir.
-                <cite>— Fondateur EHC</cite>
+                <cite>— Fondateur Élite Hospitality Consulting Bénin</cite>
               </blockquote>
               <p>
                 Notre approche — 80% de pratique, des formateurs issus du terrain, un suivi personnalisé — est pensée pour maximiser l'employabilité de chaque apprenant. Nous construisons patiemment notre réseau de partenaires pour offrir les meilleures opportunités de stage et d'insertion professionnelle.
@@ -205,7 +205,7 @@ export default function APropos() {
               </Link>
             </div>
             <div className="split-img">
-              <img src="assets/img/studio-brooklyn.jpg" alt="Salle de restaurant pédagogique du centre EHC." />
+              <img src="assets/img/studio-brooklyn.jpg" alt="Salle de restaurant pédagogique du centre Élite Hospitality Consulting Bénin." />
               <span className="ft-corner">Cotonou · Bénin</span>
             </div>
           </div>
@@ -228,13 +228,13 @@ export default function APropos() {
                 <li><b>Objectif</b><span>Insertion professionnelle durable</span></li>
                 <li><b>Résultat</b><span>Employabilité maximisée</span></li>
               </ul>
-              <Link className="btn btn--ghost" to="/contact">Rejoindre EHC
+              <Link className="btn btn--ghost" to="/contact">Rejoindre Élite Hospitality Consulting Bénin
                 <svg className="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
               </Link>
             </div>
             <div className="split-img">
-              <img src="assets/img/studio-berlin.jpg" alt="Salle de formation EHC — apprentissage pratique." />
-              <span className="ft-corner">EHC · Cotonou</span>
+              <img src="assets/img/studio-berlin.jpg" alt="Salle de formation Élite Hospitality Consulting Bénin — apprentissage pratique." />
+              <span className="ft-corner">Élite Hospitality Consulting Bénin · Cotonou</span>
             </div>
           </div>
         </div>
@@ -244,7 +244,7 @@ export default function APropos() {
         <div className="container container--narrow">
           <h2>Envie de nous<br/>rejoindre ou de<br/>nous recruter ?</h2>
           <p className="lede">
-            Nous cherchons des formateurs passionnés et des entreprises partenaires. Rejoignez l'aventure EHC et contribuons ensemble à l'excellence du service au Bénin.
+            Nous cherchons des formateurs passionnés et des entreprises partenaires. Rejoignez l'aventure Élite Hospitality Consulting Bénin et contribuons ensemble à l'excellence du service au Bénin.
           </p>
           <div className="cta-row">
             <Link className="btn btn--dark btn--lg" to="/contact">Nous contacter

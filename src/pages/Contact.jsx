@@ -40,10 +40,10 @@ export default function Contact() {
                 </div>
               </div>
               <div className="hero-media">
-                <img src="assets/img/contact-hero.jpg" alt="Bureau EHC — un espace de travail dédié à l'accueil des apprenants." />
+                <img src="assets/img/contact-hero.jpg" alt="Bureau Élite Hospitality Consulting Bénin — un espace de travail dédié à l'accueil des apprenants." />
                 <div className="floating-tag ft-top">
                   <span className="pill">Contact</span>
-                  EHC · COTONOU
+                  Élite Hospitality Consulting Bénin · COTONOU
                 </div>
                 <div className="floating-tag ft-bottom">
                   ehc.benin @ gmail.com
@@ -179,7 +179,7 @@ export default function Contact() {
                 </a>
               </div>
               <div className="split-img">
-                <img src="assets/img/contact-room.jpg" alt="Centre EHC à Cotonou — espace d'accueil et d'information." />
+                <img src="assets/img/contact-room.jpg" alt="Centre Élite Hospitality Consulting Bénin à Cotonou — espace d'accueil et d'information." />
                 <span className="ft-corner">Cotonou · Bénin</span>
               </div>
             </div>
@@ -232,7 +232,7 @@ export default function Contact() {
           <span className="label" style={{ color: 'rgba(10,10,12,0.6)' }}>Dernier mot</span>
             <h2>Envoyez un vrai<br />message. Vous<br />aurez une vraie réponse.</h2>
             <p className="lede">
-              Nous n'utilisons pas de robots pour filtrer les demandes. Chaque message est lu par un membre de l'équipe EHC, qui vous répondra personnellement.
+              Nous n'utilisons pas de robots pour filtrer les demandes. Chaque message est lu par un membre de l'équipe Élite Hospitality Consulting Bénin, qui vous répondra personnellement.
             </p>
             <div className="cta-row">
               <a className="btn btn--dark btn--lg" href="#formulaire">Ouvrir le formulaire
