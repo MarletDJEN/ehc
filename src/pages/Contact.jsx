@@ -63,7 +63,7 @@ export default function Contact() {
                 </div>
               </div>
               <div className="hero-media">
-                <img src="assets/img/contact-hero.jpg" alt="Bureau Élite Hospitality Consulting Bénin — un espace de travail dédié à l'accueil des apprenants." />
+                <img src="/assets/img/contact-hero.jpg" alt="Bureau Élite Hospitality Consulting Bénin — un espace de travail dédié à l'accueil des apprenants." />
                 <div className="floating-tag ft-top">
                   <span className="pill">Contact</span>
                   Élite Hospitality Consulting Bénin · COTONOU
@@ -219,7 +219,7 @@ export default function Contact() {
                 </a>
               </div>
               <div className="split-img">
-                <img src="assets/img/contact-room.jpg" alt="Centre Élite Hospitality Consulting Bénin à Cotonou — espace d'accueil et d'information." />
+                <img src="/assets/img/contact-room.jpg" alt="Centre Élite Hospitality Consulting Bénin à Cotonou — espace d'accueil et d'information." />
                 <span className="ft-corner">Cotonou · Bénin</span>
               </div>
             </div>

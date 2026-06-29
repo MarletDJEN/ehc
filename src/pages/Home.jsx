@@ -38,7 +38,7 @@ export default function Home() {
               </div>
             </div>
             <div className="hero-media">
-              <img src="assets/img/studio-hero.jpg" alt="Centre de formation Élite Hospitality Consulting Bénin à Cotonou — salle de cours équipée." />
+              <img src="/assets/img/studio-hero.jpg" alt="Centre de formation Élite Hospitality Consulting Bénin à Cotonou — salle de cours équipée." />
               <div className="floating-tag ft-top">
                 <span className="pill">Élite Hospitality Consulting Bénin</span>
                 Cotonou · Bénin
@@ -207,7 +207,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="split-img">
-              <img src="assets/img/studio-brooklyn.jpg" alt="Salle de restaurant pédagogique du centre Élite Hospitality Consulting Bénin." />
+              <img src="/assets/img/studio-brooklyn.jpg" alt="Salle de restaurant pédagogique du centre Élite Hospitality Consulting Bénin." />
               <span className="ft-corner">Cotonou · Bénin</span>
             </div>
           </div>

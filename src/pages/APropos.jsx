@@ -32,7 +32,7 @@ export default function APropos() {
               </div>
             </div>
             <div className="hero-media">
-              <img src="assets/img/studio-hero.jpg" alt="Centre de formation Élite Hospitality Consulting Bénin à Cotonou — salle de cours équipée." />
+              <img src="/assets/img/studio-hero.jpg" alt="Centre de formation Élite Hospitality Consulting Bénin à Cotonou — salle de cours équipée." />
               <div className="floating-tag ft-top">
                 <span className="pill">Centre</span>
                 COTONOU · BÉNIN
@@ -205,7 +205,7 @@ export default function APropos() {
               </Link>
             </div>
             <div className="split-img">
-              <img src="assets/img/studio-brooklyn.jpg" alt="Salle de restaurant pédagogique du centre Élite Hospitality Consulting Bénin." />
+              <img src="/assets/img/studio-brooklyn.jpg" alt="Salle de restaurant pédagogique du centre Élite Hospitality Consulting Bénin." />
               <span className="ft-corner">Cotonou · Bénin</span>
             </div>
           </div>
@@ -233,7 +233,7 @@ export default function APropos() {
               </Link>
             </div>
             <div className="split-img">
-              <img src="assets/img/studio-berlin.jpg" alt="Salle de formation Élite Hospitality Consulting Bénin — apprentissage pratique." />
+              <img src="/assets/img/studio-berlin.jpg" alt="Salle de formation Élite Hospitality Consulting Bénin — apprentissage pratique." />
               <span className="ft-corner">Élite Hospitality Consulting Bénin · Cotonou</span>
             </div>
           </div>
