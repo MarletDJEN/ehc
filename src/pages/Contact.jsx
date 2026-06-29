@@ -10,7 +10,7 @@ export default function Contact() {
     e.preventDefault()
     const form = e.target
     const data = {
-      name: form.name.value,
+      name: form.nom.value,
       email: form.email.value,
       sujet: form.sujet.value,
       tel: form.tel.value,
@@ -133,12 +133,12 @@ export default function Contact() {
               <div className="form-row">
                 <div className="form-field">
                   <label htmlFor="f-name">Votre nom</label>
-                  <input id="f-name" name="name" type="text" required placeholder="Jean Dupont" />
+                  <input id="f-name" name="nom" type="text" required placeholder="Jean Dupont" />
                 </div>
                 <div className="form-field">
                   <label htmlFor="f-sujet">Sujet</label>
-                  <select id="f-sujet" name="sujet">
-                    <option selected>Inscription à une formation</option>
+                  <select id="f-sujet" name="sujet" defaultValue="Inscription à une formation">
+                    <option>Inscription à une formation</option>
                     <option>Information sur les programmes</option>
                     <option>Formation en entreprise</option>
                     <option>Demande de conseil / audit</option>
