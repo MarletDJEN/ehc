@@ -31,7 +31,7 @@ export default function Services() {
               </div>
             </div>
             <div className="hero-media">
-              <img src="/assets/img/services-hero.jpg" alt="Programme de formation Élite Hospitality Consulting Bénin — supports pédagogiques et matériel professionnel." />
+              <img src="/assets/img/services-hero.jpg" alt="Programme de formation Élite Hospitality Consulting Bénin — supports pédagogiques et matériel professionnel." loading="lazy" width="720" height="480" />
               <div className="floating-tag ft-top">
                 <span className="pill">Pôle 01</span>
                 Formation · Élite Hospitality Consulting Bénin

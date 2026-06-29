@@ -1552,7 +1552,20 @@ html[data-theme="light"] {
   cursor: not-allowed;
 }
 
-/* ---------- 33. Modal Saison -------------------------------------------- */
+.form-hp {
+  position: absolute; left: -9999px; top: -9999px;
+  opacity: 0; height: 0; width: 0; overflow: hidden;
+}
+
+.form-error {
+  color: var(--lime);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  text-align: center;
+  margin-top: 16px;
+}
+
+/* ---------- 33. Modal Confirmation -------------------------------------- */
 .modal-overlay {
   position: fixed; inset: 0; z-index: 300;
   background: rgba(0,0,0,0.55);

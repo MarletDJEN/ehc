@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect, useCallback } from 'react'
 import { Link } from 'react-router-dom'
 import useScrollReveal from '../hooks/useScrollReveal'
 
@@ -6,9 +6,34 @@ export default function Contact() {
   useScrollReveal()
   const [status, setStatus] = useState('idle')
   const [formData, setFormData] = useState(null)
+  const formRef = useRef(null)
+  const modalRef = useRef(null)
+  const closeRef = useRef(null)
+
+  const closeModal = useCallback(() => {
+    setStatus('idle')
+    setFormData(null)
+    formRef.current?.reset()
+  }, [])
+
+  useEffect(() => {
+    if (status !== 'success') return
+    const onKey = (e) => { if (e.key === 'Escape') closeModal() }
+    window.addEventListener('keydown', onKey)
+    closeRef.current?.focus()
+    return () => window.removeEventListener('keydown', onKey)
+  }, [status, closeModal])
+
+  useEffect(() => {
+    if (status !== 'success') return
+    const prev = document.activeElement
+    closeRef.current?.focus()
+    return () => prev?.focus()
+  }, [status])
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    if (status === 'sending' || status === 'success') return
     const form = e.target
     const data = {
       name: form.nom.value,
@@ -16,6 +41,7 @@ export default function Contact() {
       sujet: form.sujet.value,
       tel: form.tel.value,
       message: form.message.value,
+      _hp: form._hp.value,
     }
 
     setStatus('sending')
@@ -34,11 +60,6 @@ export default function Contact() {
     } catch {
       setStatus('error')
     }
-  }
-
-  function closeModal() {
-    setStatus('idle')
-    setFormData(null)
   }
 
   return (
@@ -71,7 +92,7 @@ export default function Contact() {
                 </div>
               </div>
               <div className="hero-media">
-                <img src="/assets/img/contact-hero.jpg" alt="Bureau Élite Hospitality Consulting Bénin — un espace de travail dédié à l'accueil des apprenants." />
+                <img src="/assets/img/contact-hero.jpg" alt="Bureau Élite Hospitality Consulting Bénin — un espace de travail dédié à l'accueil des apprenants." loading="lazy" width="720" height="480" />
                 <div className="floating-tag ft-top">
                   <span className="pill">Contact</span>
                   Élite Hospitality Consulting Bénin · COTONOU
@@ -137,7 +158,8 @@ export default function Contact() {
               </p>
             </div>
 
-            <form className="form-card" onSubmit={handleSubmit}>
+            <form className="form-card" onSubmit={handleSubmit} ref={formRef}>
+              <input name="_hp" type="text" className="form-hp" tabIndex="-1" autoComplete="off" />
               <div className="form-row">
                 <div className="form-field">
                   <label htmlFor="f-name">Votre nom</label>
@@ -162,11 +184,11 @@ export default function Contact() {
               <div className="form-row">
                 <div className="form-field">
                   <label htmlFor="f-email">Email</label>
-                  <input id="f-email" name="email" type="email" required placeholder="jean@exemple.com" />
+                  <input id="f-email" name="email" type="email" required placeholder="jean@exemple.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Adresse email valide requise" />
                 </div>
                 <div className="form-field">
                   <label htmlFor="f-tel">Téléphone</label>
-                  <input id="f-tel" name="tel" type="tel" placeholder="+229 01 XX XX XX XX" />
+                  <input id="f-tel" name="tel" type="tel" placeholder="+229 01 XX XX XX XX" pattern="^[\d\s\+\-\(\)]{6,20}$" title="Numéro de téléphone valide" />
                 </div>
               </div>
 
@@ -186,7 +208,7 @@ export default function Contact() {
                 </button>
               </div>
               {status === 'error' && (
-                <p style={{ color: 'var(--lime)', fontFamily: 'var(--font-mono)', fontSize: 'var(--text-sm)', textAlign: 'center' }}>Erreur — veuillez réessayer. Si le problème persiste, écrivez-nous à info@elitehospitality.consulting</p>
+                <p className="form-error">Erreur — veuillez réessayer. Si le problème persiste, écrivez-nous à info@elitehospitality.consulting</p>
               )}
             </form>
           </div>
@@ -214,7 +236,7 @@ export default function Contact() {
                 </a>
               </div>
               <div className="split-img">
-                <img src="/assets/img/contact-room.jpg" alt="Centre Élite Hospitality Consulting Bénin à Cotonou — espace d'accueil et d'information." />
+                <img src="/assets/img/contact-room.jpg" alt="Centre Élite Hospitality Consulting Bénin à Cotonou — espace d'accueil et d'information." loading="lazy" width="560" height="420" />
                 <span className="ft-corner">Cotonou · Bénin</span>
               </div>
             </div>
@@ -281,9 +303,9 @@ export default function Contact() {
       </main>
 
       {status === 'success' && (
-        <div className="modal-overlay open" onClick={closeModal}>
+        <div className="modal-overlay open" onClick={closeModal} role="dialog" aria-modal="true" aria-label="Confirmation d'envoi" ref={modalRef}>
           <div className="modal-card open" onClick={e => e.stopPropagation()}>
-            <button className="modal-x" onClick={closeModal} aria-label="Fermer">
+            <button className="modal-x" onClick={closeModal} aria-label="Fermer" ref={closeRef}>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
                 <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
               </svg>
