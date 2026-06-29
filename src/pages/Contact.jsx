@@ -5,6 +5,7 @@ import useScrollReveal from '../hooks/useScrollReveal'
 export default function Contact() {
   useScrollReveal()
   const [status, setStatus] = useState('idle')
+  const [formData, setFormData] = useState(null)
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -28,13 +29,20 @@ export default function Contact() {
 
       if (!res.ok) throw new Error()
 
+      setFormData(data)
       setStatus('success')
     } catch {
       setStatus('error')
     }
   }
 
+  function closeModal() {
+    setStatus('idle')
+    setFormData(null)
+  }
+
   return (
+    <>
       <main id="main">
 
         <section className="hero">
@@ -129,71 +137,58 @@ export default function Contact() {
               </p>
             </div>
 
-            {status === 'success' ? (
-              <div className="form-card form-success">
-                <div className="form-success-icon">
-                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                    <polyline points="22 4 12 14.01 9 11.01"/>
-                  </svg>
+            <form className="form-card" onSubmit={handleSubmit}>
+              <div className="form-row">
+                <div className="form-field">
+                  <label htmlFor="f-name">Votre nom</label>
+                  <input id="f-name" name="nom" type="text" required placeholder="Jean Dupont" />
                 </div>
-                <h3 style={{ fontSize: 'var(--text-xl)', textTransform: 'uppercase', marginBottom: 'var(--space-3)' }}>Message envoyé</h3>
-                <p style={{ color: 'var(--fg-soft)' }}>Merci pour votre message. Nous l'avons bien reçu et nous vous répondrons immédiatement.</p>
+                <div className="form-field">
+                  <label htmlFor="f-sujet">Sujet</label>
+                  <select id="f-sujet" name="sujet" defaultValue="Inscription à une formation">
+                    <option>Inscription à une formation</option>
+                    <option>Information sur les programmes</option>
+                    <option>Formation en entreprise</option>
+                    <option>Demande de conseil / audit</option>
+                    <option>Achat de matériel</option>
+                    <option>Personnel pour événement</option>
+                    <option>Location de matériel événementiel</option>
+                    <option>Partenariat</option>
+                    <option>Autre</option>
+                  </select>
+                </div>
               </div>
-            ) : (
-              <form className="form-card" onSubmit={handleSubmit}>
-                <div className="form-row">
-                  <div className="form-field">
-                    <label htmlFor="f-name">Votre nom</label>
-                    <input id="f-name" name="nom" type="text" required placeholder="Jean Dupont" />
-                  </div>
-                  <div className="form-field">
-                    <label htmlFor="f-sujet">Sujet</label>
-                    <select id="f-sujet" name="sujet" defaultValue="Inscription à une formation">
-                      <option>Inscription à une formation</option>
-                      <option>Information sur les programmes</option>
-                      <option>Formation en entreprise</option>
-                      <option>Demande de conseil / audit</option>
-                      <option>Achat de matériel</option>
-                      <option>Personnel pour événement</option>
-                      <option>Location de matériel événementiel</option>
-                      <option>Partenariat</option>
-                      <option>Autre</option>
-                    </select>
-                  </div>
-                </div>
 
-                <div className="form-row">
-                  <div className="form-field">
-                    <label htmlFor="f-email">Email</label>
-                    <input id="f-email" name="email" type="email" required placeholder="jean@exemple.com" />
-                  </div>
-                  <div className="form-field">
-                    <label htmlFor="f-tel">Téléphone</label>
-                    <input id="f-tel" name="tel" type="tel" placeholder="+229 01 XX XX XX XX" />
-                  </div>
+              <div className="form-row">
+                <div className="form-field">
+                  <label htmlFor="f-email">Email</label>
+                  <input id="f-email" name="email" type="email" required placeholder="jean@exemple.com" />
                 </div>
+                <div className="form-field">
+                  <label htmlFor="f-tel">Téléphone</label>
+                  <input id="f-tel" name="tel" type="tel" placeholder="+229 01 XX XX XX XX" />
+                </div>
+              </div>
 
-                <div className="form-row form-row--full">
-                  <div className="form-field">
-                    <label htmlFor="f-message">Votre message</label>
-                    <textarea id="f-message" name="message" required
-                      placeholder="Bonjour, je souhaiterais des informations sur la formation Service en salle. Je suis intéressé par la session de juillet. Pouvez-vous m'envoyer le programme détaillé et les modalités d'inscription ?" />
-                  </div>
+              <div className="form-row form-row--full">
+                <div className="form-field">
+                  <label htmlFor="f-message">Votre message</label>
+                  <textarea id="f-message" name="message" required
+                    placeholder="Bonjour, je souhaiterais des informations sur la formation Service en salle. Je suis intéressé par la session de juillet. Pouvez-vous m'envoyer le programme détaillé et les modalités d'inscription ?" />
                 </div>
+              </div>
 
-                <div className="form-actions">
-                  <small>En soumettant, vous acceptez que nous vous répondions à l'adresse indiquée. Aucun partage avec des tiers.</small>
-                  <button type="submit" className="btn btn--primary btn--lg" disabled={status === 'sending'}>
-                    {status === 'sending' ? 'Envoi en cours…' : 'Envoyer le message'}
-                    <svg className="arrow" width="16" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                  </button>
-                </div>
-                {status === 'error' && (
-                  <p style={{ color: 'var(--lime)', fontFamily: 'var(--font-mono)', fontSize: 'var(--text-sm)', textAlign: 'center' }}>Erreur — veuillez réessayer. Si le problème persiste, écrivez-nous à info@elitehospitality.consulting</p>
-                )}
-              </form>
-            )}
+              <div className="form-actions">
+                <small>En soumettant, vous acceptez que nous vous répondions à l'adresse indiquée. Aucun partage avec des tiers.</small>
+                <button type="submit" className="btn btn--primary btn--lg" disabled={status === 'sending'}>
+                  {status === 'sending' ? 'Envoi en cours…' : 'Envoyer le message'}
+                  <svg className="arrow" width="16" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                </button>
+              </div>
+              {status === 'error' && (
+                <p style={{ color: 'var(--lime)', fontFamily: 'var(--font-mono)', fontSize: 'var(--text-sm)', textAlign: 'center' }}>Erreur — veuillez réessayer. Si le problème persiste, écrivez-nous à info@elitehospitality.consulting</p>
+              )}
+            </form>
           </div>
         </section>
 
@@ -284,5 +279,34 @@ export default function Contact() {
         </section>
 
       </main>
+
+      {status === 'success' && (
+        <div className="modal-overlay open" onClick={closeModal}>
+          <div className="modal-card open" onClick={e => e.stopPropagation()}>
+            <button className="modal-x" onClick={closeModal} aria-label="Fermer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
+                <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+              </svg>
+            </button>
+            <span className="modal-badge">Message envoyé</span>
+            <h2 className="modal-title">Merci {formData?.name} !</h2>
+            <p className="modal-desc">
+              Nous avons bien reçu votre message et nous vous répondrons immédiatement à <strong>{formData?.email}</strong>.
+            </p>
+            <ul className="modal-check">
+              <li>Réponse immédiate par email</li>
+              {formData?.tel && <li>Ou par téléphone au {formData.tel}</li>}
+              <li>Équipe Élite Hospitality Consulting Bénin</li>
+            </ul>
+            <div className="modal-actions">
+              <button className="btn btn--primary btn--lg" onClick={closeModal}>
+                Compris
+                <svg className="arrow" width="16" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
   )
 }
