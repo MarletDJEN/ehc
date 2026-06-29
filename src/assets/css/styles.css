@@ -1497,9 +1497,62 @@ html[data-theme="light"] {
   .filter-row .btn { font-size: var(--text-xs); padding: 6px 12px; }
   .brand { font-size: 0.875rem; }
   .brand-logo { width: 22px; height: 22px; }
+  .hero-sub { font-size: var(--text-sm); }
+  .hero-meta { font-size: var(--text-xs); }
+  .floating-tag { display: none; }
+  .tier-card h3 { font-size: var(--text-lg); }
+  .work-meta .wm-title { font-size: var(--text-sm); }
+  .team-card h3 { font-size: var(--text-sm); }
+  .channel-card h3 { font-size: var(--text-lg); }
+  .process-card h3 { font-size: var(--text-base); }
+  .faq-card h3 { font-size: var(--text-base); }
+  .footer-brand .brand { font-size: var(--text-xl); }
+  .footer-brand p { font-size: var(--text-xs); }
+  .footer-bottom { font-size: 0.625rem; }
+  .nav-cta-row .btn--sm { display: none; }
+  .theme-toggle { width: 32px; height: 32px; }
+  .form-success { padding: var(--space-6) var(--space-4); }
 }
 
-/* ---------- 32. Modal Saison -------------------------------------------- */
+@media (max-width: 380px) {
+  .hero-headline { font-size: var(--text-2xl); }
+  h1 { font-size: var(--text-2xl); }
+  h2, .section-head h2 { font-size: var(--text-2xl); }
+  .closing-cta h2 { font-size: var(--text-2xl); }
+  .container { padding-inline: 1rem; }
+  section { padding-block: var(--space-5); }
+  .hero { padding-block: var(--space-4) var(--space-5); }
+  .form-card { padding: var(--space-3); }
+  .form-field input,
+  .form-field textarea,
+  .form-field select { padding: 10px 12px; font-size: var(--text-sm); }
+  .hero-media { aspect-ratio: 3/4; }
+}
+
+/* ---------- 32. Form success state -------------------------------------- */
+.form-success {
+  text-align: center;
+  padding: var(--space-8) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+.form-success-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(212, 164, 55, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-card button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ---------- 33. Modal Saison -------------------------------------------- */
 .modal-overlay {
   position: fixed; inset: 0; z-index: 300;
   background: rgba(0,0,0,0.55);

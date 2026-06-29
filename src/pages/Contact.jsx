@@ -4,7 +4,7 @@ import useScrollReveal from '../hooks/useScrollReveal'
 
 export default function Contact() {
   useScrollReveal()
-  const [btnText, setBtnText] = useState('Envoyer le message')
+  const [status, setStatus] = useState('idle')
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -17,7 +17,7 @@ export default function Contact() {
       message: form.message.value,
     }
 
-    setBtnText('Envoi en cours…')
+    setStatus('sending')
 
     try {
       const res = await fetch('/api/contact', {
@@ -28,9 +28,9 @@ export default function Contact() {
 
       if (!res.ok) throw new Error()
 
-      setBtnText('Merci — nous vous répondrons immédiatement.')
+      setStatus('success')
     } catch {
-      setBtnText('Erreur — veuillez réessayer')
+      setStatus('error')
     }
   }
 
@@ -129,54 +129,71 @@ export default function Contact() {
               </p>
             </div>
 
-            <form className="form-card" onSubmit={handleSubmit}>
-              <div className="form-row">
-                <div className="form-field">
-                  <label htmlFor="f-name">Votre nom</label>
-                  <input id="f-name" name="nom" type="text" required placeholder="Jean Dupont" />
+            {status === 'success' ? (
+              <div className="form-card form-success">
+                <div className="form-success-icon">
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                    <polyline points="22 4 12 14.01 9 11.01"/>
+                  </svg>
                 </div>
-                <div className="form-field">
-                  <label htmlFor="f-sujet">Sujet</label>
-                  <select id="f-sujet" name="sujet" defaultValue="Inscription à une formation">
-                    <option>Inscription à une formation</option>
-                    <option>Information sur les programmes</option>
-                    <option>Formation en entreprise</option>
-                    <option>Demande de conseil / audit</option>
-                    <option>Achat de matériel</option>
-                    <option>Personnel pour événement</option>
-                    <option>Location de matériel événementiel</option>
-                    <option>Partenariat</option>
-                    <option>Autre</option>
-                  </select>
-                </div>
+                <h3 style={{ fontSize: 'var(--text-xl)', textTransform: 'uppercase', marginBottom: 'var(--space-3)' }}>Message envoyé</h3>
+                <p style={{ color: 'var(--fg-soft)' }}>Merci pour votre message. Nous l'avons bien reçu et nous vous répondrons immédiatement.</p>
               </div>
+            ) : (
+              <form className="form-card" onSubmit={handleSubmit}>
+                <div className="form-row">
+                  <div className="form-field">
+                    <label htmlFor="f-name">Votre nom</label>
+                    <input id="f-name" name="nom" type="text" required placeholder="Jean Dupont" />
+                  </div>
+                  <div className="form-field">
+                    <label htmlFor="f-sujet">Sujet</label>
+                    <select id="f-sujet" name="sujet" defaultValue="Inscription à une formation">
+                      <option>Inscription à une formation</option>
+                      <option>Information sur les programmes</option>
+                      <option>Formation en entreprise</option>
+                      <option>Demande de conseil / audit</option>
+                      <option>Achat de matériel</option>
+                      <option>Personnel pour événement</option>
+                      <option>Location de matériel événementiel</option>
+                      <option>Partenariat</option>
+                      <option>Autre</option>
+                    </select>
+                  </div>
+                </div>
 
-              <div className="form-row">
-                <div className="form-field">
-                  <label htmlFor="f-email">Email</label>
-                  <input id="f-email" name="email" type="email" required placeholder="jean@exemple.com" />
+                <div className="form-row">
+                  <div className="form-field">
+                    <label htmlFor="f-email">Email</label>
+                    <input id="f-email" name="email" type="email" required placeholder="jean@exemple.com" />
+                  </div>
+                  <div className="form-field">
+                    <label htmlFor="f-tel">Téléphone</label>
+                    <input id="f-tel" name="tel" type="tel" placeholder="+229 01 XX XX XX XX" />
+                  </div>
                 </div>
-                <div className="form-field">
-                  <label htmlFor="f-tel">Téléphone</label>
-                  <input id="f-tel" name="tel" type="tel" placeholder="+229 01 XX XX XX XX" />
-                </div>
-              </div>
 
-              <div className="form-row form-row--full">
-                <div className="form-field">
-                  <label htmlFor="f-message">Votre message</label>
-                  <textarea id="f-message" name="message" required
-                    placeholder="Bonjour, je souhaiterais des informations sur la formation Service en salle. Je suis intéressé par la session de juillet. Pouvez-vous m'envoyer le programme détaillé et les modalités d'inscription ?" />
+                <div className="form-row form-row--full">
+                  <div className="form-field">
+                    <label htmlFor="f-message">Votre message</label>
+                    <textarea id="f-message" name="message" required
+                      placeholder="Bonjour, je souhaiterais des informations sur la formation Service en salle. Je suis intéressé par la session de juillet. Pouvez-vous m'envoyer le programme détaillé et les modalités d'inscription ?" />
+                  </div>
                 </div>
-              </div>
 
-              <div className="form-actions">
-                <small>En soumettant, vous acceptez que nous vous répondions à l'adresse indiquée. Aucun partage avec des tiers.</small>
-                <button type="submit" className="btn btn--primary btn--lg">{btnText}
-                  <svg className="arrow" width="16" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                </button>
-              </div>
-            </form>
+                <div className="form-actions">
+                  <small>En soumettant, vous acceptez que nous vous répondions à l'adresse indiquée. Aucun partage avec des tiers.</small>
+                  <button type="submit" className="btn btn--primary btn--lg" disabled={status === 'sending'}>
+                    {status === 'sending' ? 'Envoi en cours…' : 'Envoyer le message'}
+                    <svg className="arrow" width="16" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                  </button>
+                </div>
+                {status === 'error' && (
+                  <p style={{ color: 'var(--lime)', fontFamily: 'var(--font-mono)', fontSize: 'var(--text-sm)', textAlign: 'center' }}>Erreur — veuillez réessayer. Si le problème persiste, écrivez-nous à info@elitehospitality.consulting</p>
+                )}
+              </form>
+            )}
           </div>
         </section>
 
