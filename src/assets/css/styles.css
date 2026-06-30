@@ -412,6 +412,9 @@ p:last-child { margin-bottom: 0; }
 .hero-media-tag {
   position: absolute;
   top: 16px; left: 16px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
   background: var(--ink-000);
   border: 1px solid var(--rule-strong);
   border-radius: var(--radius);
@@ -422,6 +425,14 @@ p:last-child { margin-bottom: 0; }
   text-transform: uppercase;
   color: var(--fg);
   z-index: 2;
+}
+.hero-media-tag .pill {
+  background: var(--lime);
+  color: var(--ink-000);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
 }
 .hero-headline {
   font-size: var(--text-mega);

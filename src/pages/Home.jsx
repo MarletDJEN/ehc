@@ -38,7 +38,7 @@ export default function Home() {
               </div>
             </div>
             <div className="hero-media">
-              <div className="hero-media-tag">Élite Hospitality Consulting · Cotonou</div>
+              <div className="hero-media-tag"><span className="pill">Élite Hospitality Consulting</span> Cotonou · Bénin</div>
               <img className="hero-logo" src="/assets/elite.jpg" alt="Élite Hospitality Consulting Bénin" />
             </div>
           </div>
