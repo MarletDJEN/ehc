@@ -38,6 +38,7 @@ export default function Home() {
               </div>
             </div>
             <div className="hero-media">
+              <div className="hero-media-tag">Élite Hospitality Consulting · Cotonou</div>
               <img className="hero-logo" src="/assets/elite.jpg" alt="Élite Hospitality Consulting Bénin" />
             </div>
           </div>

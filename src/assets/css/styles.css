@@ -396,6 +396,7 @@ p:last-child { margin-bottom: 0; }
 }
 .hero-text > * + * { margin-top: var(--space-5); }
 .hero-media {
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
@@ -407,6 +408,20 @@ p:last-child { margin-bottom: 0; }
 .hero-media .hero-logo {
   width: 100%; height: 100%;
   object-fit: cover;
+}
+.hero-media-tag {
+  position: absolute;
+  top: 16px; left: 16px;
+  background: var(--ink-000);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  padding: var(--space-2) var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fg);
+  z-index: 2;
 }
 .hero-headline {
   font-size: var(--text-mega);
