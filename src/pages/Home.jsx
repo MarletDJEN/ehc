@@ -14,7 +14,6 @@ export default function Home() {
         <div className="container container--wide">
           <div className="hero-grid">
             <div className="hero-text">
-              <img className="hero-logo" src="/assets/img/logo.jpeg" alt="Élite Hospitality Consulting Bénin" />
               <span className="eyebrow"><span className="dot" aria-hidden="true"></span>Centre de formation · Cotonou</span>
               <h1 className="hero-headline">
                 L'excellence du<br/>
@@ -38,7 +37,9 @@ export default function Home() {
                 <span><strong>12</strong> · places par session</span>
               </div>
             </div>
-                        
+            <div className="hero-media">
+              <img className="hero-logo" src="/assets/img/logo.jpeg" alt="Élite Hospitality Consulting Bénin" />
+            </div>
           </div>
         </div>
       </section>

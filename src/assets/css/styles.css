@@ -395,11 +395,18 @@ p:last-child { margin-bottom: 0; }
   align-items: center;
 }
 .hero-text > * + * { margin-top: var(--space-5); }
-.hero-logo {
-  width: 48px; height: 48px;
-  object-fit: contain;
-  border-radius: 8px;
-  margin-bottom: var(--space-2);
+.hero-media {
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  max-width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-media .hero-logo {
+  width: 100%; height: auto;
+  border-radius: 12px;
 }
 .hero-headline {
   font-size: var(--text-mega);
@@ -1132,6 +1139,7 @@ p:last-child { margin-bottom: 0; }
   section.compact { padding-block: var(--space-5); }
   .hero { padding-block: var(--space-6) var(--space-7); }
   .hero-grid { gap: var(--space-5); }
+  .hero-media { max-width: 120px; }
   .hero-headline { font-size: var(--text-4xl); line-height: 1.35; }
   .hero-sub { font-size: var(--text-base); }
   .hero-cta-row { flex-direction: column; }
