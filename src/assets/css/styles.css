@@ -395,6 +395,12 @@ p:last-child { margin-bottom: 0; }
   align-items: center;
 }
 .hero-text > * + * { margin-top: var(--space-5); }
+.hero-logo {
+  width: 48px; height: 48px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: var(--space-2);
+}
 .hero-headline {
   font-size: var(--text-mega);
   line-height: 1.3;
