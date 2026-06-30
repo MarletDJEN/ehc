@@ -38,7 +38,7 @@ export default function Home() {
               </div>
             </div>
             <div className="hero-media">
-              <img className="hero-logo" src="/assets/img/logo.jpeg" alt="Élite Hospitality Consulting Bénin" />
+              <img className="hero-logo" src="/assets/elite.jpg" alt="Élite Hospitality Consulting Bénin" />
             </div>
           </div>
         </div>
