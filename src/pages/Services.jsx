@@ -30,16 +30,6 @@ export default function Services() {
                 <span><strong>Suivi</strong> · accompagnement personnalisé</span>
               </div>
             </div>
-            <div className="hero-media">
-              <img src="/assets/img/services-hero.jpg" alt="Programme de formation Élite Hospitality Consulting Bénin — supports pédagogiques et matériel professionnel." loading="lazy" width="720" height="480" />
-              <div className="floating-tag ft-top">
-                <span className="pill">Pôle 01</span>
-                Formation · Élite Hospitality Consulting Bénin
-              </div>
-              <div className="floating-tag ft-bottom">
-                Théorique + pratique intensive
-              </div>
-            </div>
           </div>
         </div>
       </section>

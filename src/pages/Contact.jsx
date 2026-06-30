@@ -91,16 +91,7 @@ export default function Contact() {
                   <span><strong>Certification</strong> · à la clé</span>
                 </div>
               </div>
-              <div className="hero-media">
-                <img src="/assets/img/contact-hero.jpg" alt="Bureau Élite Hospitality Consulting Bénin — un espace de travail dédié à l'accueil des apprenants." loading="lazy" width="720" height="480" />
-                <div className="floating-tag ft-top">
-                  <span className="pill">Contact</span>
-                  Élite Hospitality Consulting Bénin · COTONOU
-                </div>
-                <div className="floating-tag ft-bottom">
-                  info @ elitehospitality.consulting
-                </div>
-              </div>
+
             </div>
           </div>
         </section>
@@ -235,10 +226,7 @@ export default function Contact() {
                   <svg className="arrow" width="16" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </a>
               </div>
-              <div className="split-img">
-                <img src="/assets/img/contact-room.jpg" alt="Centre Élite Hospitality Consulting Bénin à Cotonou — espace d'accueil et d'information." loading="lazy" width="560" height="420" />
-                <span className="ft-corner">Cotonou · Bénin</span>
-              </div>
+
             </div>
           </div>
         </section>

@@ -31,16 +31,6 @@ export default function APropos() {
                 <span><strong>Insertion</strong> · accompagnement vers l'emploi</span>
               </div>
             </div>
-            <div className="hero-media">
-              <img src="/assets/img/studio-hero.jpg" alt="Centre de formation Élite Hospitality Consulting Bénin à Cotonou — salle de cours équipée." loading="lazy" width="720" height="480" />
-              <div className="floating-tag ft-top">
-                <span className="pill">Centre</span>
-                COTONOU · BÉNIN
-              </div>
-              <div className="floating-tag ft-bottom">
-                Formation · Conseil · Équipement
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -204,10 +194,6 @@ export default function APropos() {
                 <svg className="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
               </Link>
             </div>
-            <div className="split-img">
-              <img src="/assets/img/studio-brooklyn.jpg" alt="Salle de restaurant pédagogique du centre Élite Hospitality Consulting Bénin." loading="lazy" width="560" height="420" />
-              <span className="ft-corner">Cotonou · Bénin</span>
-            </div>
           </div>
         </div>
       </section>
@@ -231,10 +217,6 @@ export default function APropos() {
               <Link className="btn btn--ghost" to="/contact">Rejoindre Élite Hospitality Consulting Bénin
                 <svg className="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
               </Link>
-            </div>
-            <div className="split-img">
-              <img src="/assets/img/studio-berlin.jpg" alt="Salle de formation Élite Hospitality Consulting Bénin — apprentissage pratique." loading="lazy" width="560" height="420" />
-              <span className="ft-corner">Élite Hospitality Consulting Bénin · Cotonou</span>
             </div>
           </div>
         </div>

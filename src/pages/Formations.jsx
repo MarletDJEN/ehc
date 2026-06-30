@@ -30,16 +30,7 @@ export default function Formations() {
                   <span><strong>Certification</strong> · à la clé</span>
                 </div>
               </div>
-              <div className="hero-media">
-                <img src="/assets/img/hero-archive.jpg" alt="Formation pratique en situation réelle — apprenants Élite Hospitality Consulting Bénin en salle." loading="lazy" width="720" height="480" />
-                <div className="floating-tag ft-top">
-                  <span className="pill">Formation</span>
-                  Élite Hospitality Consulting Bénin · Cotonou
-                </div>
-                <div className="floating-tag ft-bottom">
-                  Théorie + Pratique + Stage
-                </div>
-              </div>
+
             </div>
           </div>
         </section>
@@ -72,11 +63,7 @@ export default function Formations() {
           <div className="container container--wide">
             <div className="work-grid reveal-stagger">
               <Link className="work-item work-item--xl reveal" to="/services#formation">
-                <div className="wm">
-                  <img src="/assets/img/work-atrium.jpg" alt="Service en salle dans un restaurant gastronomique." loading="lazy" width="400" height="500" />
-                  <span className="wm-pill">Service</span>
-                  <span className="wm-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg></span>
-                </div>
+
                 <div className="work-meta">
                   <div>
                     <div className="wm-title">Service en salle</div>
@@ -87,11 +74,7 @@ export default function Formations() {
               </Link>
 
               <Link className="work-item work-item--sm reveal" to="/services#formation">
-                <div className="wm">
-                  <img src="/assets/img/work-still-1.jpg" alt="Préparation de cocktails au bar." loading="lazy" width="400" height="500" />
-                  <span className="wm-pill">Bar</span>
-                  <span className="wm-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg></span>
-                </div>
+
                 <div className="work-meta">
                   <div>
                     <div className="wm-title">Barista & Barman</div>
@@ -102,11 +85,7 @@ export default function Formations() {
               </Link>
 
               <Link className="work-item work-item--md reveal" to="/services#formation">
-                <div className="wm">
-                  <img src="/assets/img/work-arch.jpg" alt="Professionnel du housekeeping." loading="lazy" width="400" height="500" />
-                  <span className="wm-pill">Hôtellerie</span>
-                  <span className="wm-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg></span>
-                </div>
+
                 <div className="work-meta">
                   <div>
                     <div className="wm-title">Housekeeping</div>
@@ -117,11 +96,7 @@ export default function Formations() {
               </Link>
 
               <Link className="work-item work-item--md reveal" to="/services#formation">
-                <div className="wm">
-                  <img src="/assets/img/work-food.jpg" alt="Maître d'hôtel supervisant le service." loading="lazy" width="400" height="500" />
-                  <span className="wm-pill">Direction</span>
-                  <span className="wm-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg></span>
-                </div>
+
                 <div className="work-meta">
                   <div>
                     <div className="wm-title">Maître d'hôtel</div>
@@ -132,11 +107,7 @@ export default function Formations() {
               </Link>
 
               <Link className="work-item work-item--sm reveal" to="/services#formation">
-                <div className="wm">
-                  <img src="/assets/img/work-portrait-1.jpg" alt="Superviseur en restauration." loading="lazy" width="400" height="500" />
-                  <span className="wm-pill">Management</span>
-                  <span className="wm-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg></span>
-                </div>
+
                 <div className="work-meta">
                   <div>
                     <div className="wm-title">Superviseur</div>
@@ -147,11 +118,7 @@ export default function Formations() {
               </Link>
 
               <Link className="work-item work-item--lg reveal" to="/services#formation">
-                <div className="wm">
-                  <img src="/assets/img/work-product.jpg" alt="Formation en accueil client." loading="lazy" width="400" height="500" />
-                  <span className="wm-pill">Accueil</span>
-                  <span className="wm-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg></span>
-                </div>
+
                 <div className="work-meta">
                   <div>
                     <div className="wm-title">Accueil & Communication</div>
@@ -162,11 +129,7 @@ export default function Formations() {
               </Link>
 
               <Link className="work-item work-item--sm reveal" to="/services#formation">
-                <div className="wm">
-                  <img src="/assets/img/work-still-2.jpg" alt="Communication professionnelle en milieu hôtelier." loading="lazy" width="400" height="500" />
-                  <span className="wm-pill">Communication</span>
-                  <span className="wm-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg></span>
-                </div>
+
                 <div className="work-meta">
                   <div>
                     <div className="wm-title">Communication pro</div>
