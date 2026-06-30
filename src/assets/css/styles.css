@@ -1139,6 +1139,7 @@ p:last-child { margin-bottom: 0; }
 
 @media (max-width: 720px) {
   .nav-links { display: none; }
+  .nav-cta-row { margin-inline-start: auto; }
   .nav-toggle { display: inline-flex; }
   .form-row { grid-template-columns: 1fr; }
   .stat-strip { grid-template-columns: 1fr; }
